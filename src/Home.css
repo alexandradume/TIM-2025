@@ -1,0 +1,102 @@
+
+body {
+       
+    height: 100vh;
+    margin: 0; 
+
+  }
+
+
+.profile-container {
+display: flex;
+}
+
+.profile-content {
+flex: 1;
+padding: 50px;
+}
+
+
+
+body {
+margin: 0; 
+}
+
+
+
+
+body {
+font-family: "Arial", sans-serif;
+line-height: 1.6;
+margin: 0;
+padding: 0;
+
+color: #333;
+}
+
+.divv {
+max-width: 90vw;
+margin: 50px auto;
+padding: 20px;
+background-color: #ffffff;
+border-radius: 10px;
+font-size:10px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+font-size: 2.5em;
+margin-bottom: 20px;
+color: #d9ade6;
+text-align: center;
+}
+
+h2 {
+font-size: 1.8em;
+margin-top: 30px;
+margin-bottom: 10px;
+color: rgba(41, 79, 120, 0.846);
+}
+
+ul {
+list-style-type: disc;
+padding-left: 20px;
+margin: 20px 0;
+}
+
+ul li {
+margin-bottom: 10px;
+}
+
+li {
+font-size: 1.1em;
+color: #555;
+}
+
+br {
+margin-bottom: 20px;
+}
+
+p {
+font-size: 1.2em;
+margin-bottom: 20px;
+}
+
+button {
+display: inline-block;
+padding: 10px 20px;
+font-size: 1em;
+color: #fff;
+background-color: #d9ade6;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+text-decoration: none;
+margin-top: 20px;
+text-align: center;
+}
+
+button:hover {
+background-color: #d9ade6;
+}
+

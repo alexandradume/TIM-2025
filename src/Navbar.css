@@ -1,0 +1,30 @@
+.navbar {
+  background-color: rgba(41, 79, 120, 0.846);
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+}
+
+.navbar a {
+  color: #d3c5ff9c;
+  text-align: center;
+  padding-right: 14px;
+  padding-left: 14px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.navbar a:hover {
+  background-color: rgba(104, 151, 204, 0.846);
+  color: black;
+}
+
+.brand {
+  font-family: 'Poppins', sans-serif;
+  margin-left: auto; 
+  padding-right: 14px; 
+  color:white;
+  size:30px;
+}

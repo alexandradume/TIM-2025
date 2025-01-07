@@ -1,0 +1,50 @@
+.carusel {
+    text-align: center;
+    max-width: 700px;
+    max-height: 200px;
+    margin: 0 auto;
+    padding-top:20px;
+  }
+  
+  .carusel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .carusel-image {
+    max-width: 100%;
+    height: 300px;
+  
+    border-radius: 5px;
+  }
+  
+  .prev-button,
+  .next-button {
+    background-color: #bc95da;
+    color: white;
+    border: none;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+  
+  .prev-button {
+    left: -50px;
+  }
+  
+  .next-button {
+    right: -50px;
+  }
+  
+  .prev-button:hover,
+  .next-button:hover {
+    background-color: #d9ade6;
+  }
+  
