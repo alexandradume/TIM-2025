@@ -10,6 +10,8 @@ Aceasta este prima pagina din site: contine niste informatii utile pentru utiliz
 **Produse**
 Aceasta pagina cuprinde o lista de incaltaminte atat pentru femei cat si pentru barbati. 
 
+Avem un api care ne transmite vremea din Brasov si in functie de aceasta, ne recomanda un tip de incaltaminte. Pentru temperaturi negative, ne recomanda papuci de zapada, pentru cele mai mici de 20, suntem incurajati sa ne luam pantofi caldurosi iar pentru cele mai ridicate, sandale.
+
 ![Screenshot_7-1-2025_123355_localhost](https://github.com/user-attachments/assets/df30f1db-de75-4dba-b7a2-a5c7d50aa2e1)
 
  Incaltamintea pentru femei cuprinde marimi de la 36 la 40, cea de barbati de la 40 la 44.
