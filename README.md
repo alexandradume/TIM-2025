@@ -34,7 +34,7 @@ Pe aceasta pagina vedem si totalul de plata, spre exemplu:
 
 ![Screenshot_7-1-2025_144519_localhost](https://github.com/user-attachments/assets/837476f5-377d-4fd6-bb98-3cfa22a20f5a)
 
-#Instalare si pornire
+# Instalare si pornire
 Dupa descarcarea zip-ului, putem deschide proiectul cu Visual Studio. In terminal, rulam comanda npm install, apoi nmp start.
 
 
