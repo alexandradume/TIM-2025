@@ -1,3 +1,4 @@
+# SoleStyle Website
 ## Descriere
 Acest proiect reprezintă un site de e-commerce dedicat vânzării de pantofi. Site-ul permite utilizatorilor să navigheze printr-o gamă variată de pantofi, să adauge produse în coș și să plaseze comenzi. 
 Site-ul cuprinde trei pagini disponibile principal printr-o bara de navigatie.
