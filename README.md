@@ -1,4 +1,4 @@
-# Descriere
+**Descriere**
 Acest proiect reprezintă un site de e-commerce dedicat vânzării de pantofi. Site-ul permite utilizatorilor să navigheze printr-o gamă variată de pantofi, să adauge produse în coș și să plaseze comenzi. 
 Site-ul cuprinde trei pagini disponibile principal printr-o bara de navigatie.
 ##Acasa
@@ -6,7 +6,7 @@ Aceasta este prima pagina din site: contine niste informatii utile pentru utiliz
 
 ![localhost_3000_home (2)](https://github.com/user-attachments/assets/47967e15-80a9-45ae-b9fb-6666131570b5)
 
-###Produse
+**Produse**
 Aceasta pagina cuprinde o lista de incaltaminte atat pentru femei cat si pentru barbati. 
 
 ![Screenshot_7-1-2025_123355_localhost](https://github.com/user-attachments/assets/df30f1db-de75-4dba-b7a2-a5c7d50aa2e1)
@@ -21,7 +21,9 @@ Dupa selectarea marimii si apasarea cosului, produsul se aduaga la o lista de la
 ![Screenshot (1151)](https://github.com/user-attachments/assets/a57ff53e-8217-4279-82d5-6cc14744ac0a)
 
 Pentru plasare comenzii trebuie sa apasam "Plaseaza comanda" pentru a salva alegerile facute.
-###Checkout
+
+
+**Checkout**
 Aici ne asteapta produsele introduse in cos si un formular pentru trimiterea comenzii.![Screenshot_7-1-2025_124150_localhost](https://github.com/user-attachments/assets/1ab41389-d702-4b0f-a2b8-32efcc921117)
 Dupa completarea corecta a formularului, primim o notificare. 
 ![Screenshot (1161)](https://github.com/user-attachments/assets/42a2b57c-39ba-4685-8035-4ed2c57ed16d)
