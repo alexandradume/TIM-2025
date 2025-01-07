@@ -30,6 +30,11 @@ Pentru plasare comenzii trebuie sa apasam "Plaseaza comanda" pentru a salva aleg
 Aici ne asteapta produsele introduse in cos si un formular pentru trimiterea comenzii.![Screenshot_7-1-2025_124150_localhost](https://github.com/user-attachments/assets/1ab41389-d702-4b0f-a2b8-32efcc921117)
 Dupa completarea corecta a formularului, primim o notificare. 
 ![Screenshot (1161)](https://github.com/user-attachments/assets/42a2b57c-39ba-4685-8035-4ed2c57ed16d)
+Pe aceasta pagina vedem si totalul de plata, spre exemplu:
 
+![Screenshot_7-1-2025_144519_localhost](https://github.com/user-attachments/assets/837476f5-377d-4fd6-bb98-3cfa22a20f5a)
+
+#Instalare si pornire
+Dupa descarcarea zip-ului, putem deschide proiectul cu Visual Studio. In terminal, rulam comanda npm install, apoi nmp start.
 
 
