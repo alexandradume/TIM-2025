@@ -8,7 +8,8 @@ const Checkout = () => {
   const location = useLocation();
   const state = location.state || {};
 
-  const cart = state.cart || [];
+  // Folosește starea locală pentru a gestiona coșul
+  const [cart, setCart] = useState(state.cart || []); // Folosim useState pentru coș
   const [name, setName] = useState("");
   const [address, setAddress] = useState("");
   const [email, setEmail] = useState("");
@@ -77,12 +78,20 @@ const Checkout = () => {
 
     alert("Comanda a fost plasată cu succes!");
 
+    // Golește coșul folosind setCart
+    setCart([]);  // Acesta este pasul important
+
     setName("");
     setAddress("");
     setEmail("");
     setPhone("");
     setPaymentMethod("");
     setTermsAccepted(false);
+  };
+
+  // Calculează totalul coșului
+  const calculateTotal = () => {
+    return cart.reduce((total, item) => total + item.price, 0).toFixed(2);
   };
 
   return (
@@ -114,6 +123,14 @@ const Checkout = () => {
             <p>Coșul este gol.</p>
           )}
         </div>
+
+        {/* Afișează totalul */}
+        {cart.length > 0 && (
+          <div className="total">
+            <h3>Total: {calculateTotal()} RON</h3>
+          </div>
+        )}
+
         <div className="container mt-5">
           <h2>Plasează comanda</h2>
 
@@ -152,7 +169,6 @@ const Checkout = () => {
               )}
             </div>
 
-
             <div className="mb-3">
               <label htmlFor="email" className="form-label">
                 Email:
@@ -169,7 +185,6 @@ const Checkout = () => {
                 <div className="invalid-feedback">{errors.email}</div>
               )}
             </div>
-
 
             <div className="mb-3">
               <label htmlFor="phone" className="form-label">
@@ -237,7 +252,7 @@ const Checkout = () => {
           </form>
         </div>
       </div>
-      <Footer></Footer>
+      <Footer />
     </div>
   );
 };
