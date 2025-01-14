@@ -8,8 +8,7 @@ const Checkout = () => {
   const location = useLocation();
   const state = location.state || {};
 
-  // Folosește starea locală pentru a gestiona coșul
-  const [cart, setCart] = useState(state.cart || []); // Folosim useState pentru coș
+  const [cart, setCart] = useState(state.cart || []);
   const [name, setName] = useState("");
   const [address, setAddress] = useState("");
   const [email, setEmail] = useState("");
@@ -77,10 +76,8 @@ const Checkout = () => {
     }
 
     alert("Comanda a fost plasată cu succes!");
-
-    // Golește coșul folosind setCart
-    setCart([]);  // Acesta este pasul important
-
+    
+    setCart([]);
     setName("");
     setAddress("");
     setEmail("");
@@ -89,7 +86,6 @@ const Checkout = () => {
     setTermsAccepted(false);
   };
 
-  // Calculează totalul coșului
   const calculateTotal = () => {
     return cart.reduce((total, item) => total + item.price, 0).toFixed(2);
   };
@@ -103,10 +99,11 @@ const Checkout = () => {
           <h2>Produsele tale:</h2>
           {cart.length > 0 ? (
             <ul>
-              {cart.map((item) => (
-                <li key={item.id} style={{ marginBottom: "20px" }}>
+              {cart.map((item, index) => (
+                <li key={`${item.src}-${index}`} style={{ marginBottom: "20px" }}>
                   <img
                     src={item.src}
+                    alt={`Product ${index + 1}`}
                     style={{
                       width: "100px",
                       height: "auto",
@@ -124,7 +121,6 @@ const Checkout = () => {
           )}
         </div>
 
-        {/* Afișează totalul */}
         {cart.length > 0 && (
           <div className="total">
             <h3>Total: {calculateTotal()} RON</h3>
@@ -211,9 +207,7 @@ const Checkout = () => {
                 id="paymentMethod"
                 value={paymentMethod}
                 onChange={(e) => setPaymentMethod(e.target.value)}
-                className={`form-select ${
-                  errors.paymentMethod ? "is-invalid" : ""
-                }`}
+                className={`form-select ${errors.paymentMethod ? "is-invalid" : ""}`}
               >
                 <option value="">Selectează o metodă de plată</option>
                 <option value="card">Card bancar</option>
@@ -225,21 +219,19 @@ const Checkout = () => {
             </div>
 
             <div className="form-check mb-3">
+              <input
+                type="checkbox"
+                className={`form-check-input ${errors.termsAccepted ? "is-invalid" : ""}`}
+                id="terms"
+                checked={termsAccepted}
+                onChange={(e) => setTermsAccepted(e.target.checked)}
+              />
               <label className="form-check-label" htmlFor="terms">
                 Accept termenii și condițiile
               </label>
               {errors.termsAccepted && (
                 <div className="invalid-feedback">{errors.termsAccepted}</div>
               )}
-              <input
-                type="checkbox"
-                className={`form-check-input ${
-                  errors.termsAccepted ? "is-invalid" : ""
-                }`}
-                id="terms"
-                checked={termsAccepted}
-                onChange={(e) => setTermsAccepted(e.target.checked)}
-              />
             </div>
 
             <button
